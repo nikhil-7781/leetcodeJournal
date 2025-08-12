@@ -6,7 +6,7 @@ class Solution:
         def dfs(i):
             if i>=len(nums):
                 res.append(sub.copy())
-                return
+                return #exit that particular recursive call
             #include nums[i]
             sub.append(nums[i])
             dfs(i+1)
